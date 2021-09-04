@@ -1,0 +1,175 @@
+<!DOCTYPE contactus.html>
+<html lang="en-UK">
+<head>
+<div class="header">
+    <img src = "header.jpg" class="header_image" />
+</div>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+
+<script type="text/javascript">
+		function submitForm() {
+			//alert("form submitted!");
+			document.getElementById("formResults").style.display = "block";
+			document.getElementById("formResults").innerHTML = "You have sent the following message:<br/>";
+			document.getElementById("formResults").innerHTML += document.getElementById("subject").value;
+		}
+	</script>
+
+	<div style="background-image: url('background.jpg');">
+<div class="navMENU">
+<ul>
+	<li><a href="home.html"> home</a> </li> 
+	<li><a href="women.html"> the maze</a> </li>
+	<li><a href="comingsoon.html"> coming soon</a> </li>
+	<li><a href="contact.html"> contact us</a> </li>
+</ul>
+</div> 
+
+<br>
+
+</body>
+<footer>
+	<img src="footer.jpg" alt="footer" width="1500" height="80" align="left">
+
+</footer>
+
+<style>
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fcba03, 0 0 40px #fcba03, 0 0 50px #fcba03, 0 0 60px #fcba03, 0 0 70px #fcba03;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fc8403, 0 0 40px #fc8403, 0 0 50px #fc8403, 0 0 60px #fc8403, 0 0 70px #fc8403, 0 0 80px #fc8403;
+  }
+}
+</style>
+<h1 class="glow">contact us</h1> 
+
+
+		
+<table style="width:90%; float:center;">
+	<tr>
+		<th>
+	 		<p style="font-family:Lucida Bright; font-size:20px;color:black;text-align:center; align-content:center; align-items:center;" id="rcorners2"> 
+			To make your life easier, as we are aware it may be difficult to come to the office or even contact us through the other methods, <br> Feel free to fill in the form  about your enquiry or problem   </p>
+		</th>
+		<th colspan="2">
+			<div class="container">
+  <form>
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="your  name..">
+
+    <label for="email">Email Address</label>
+    <input type="text" id="email" name="email" placeholder="your email..">
+
+    <label for="subject">Subject of Problem</label>
+    <select id="subject" name="subect">
+	<option value="question about game">question about a game</option>
+	<option value="problem with site">problem with site</option>
+	<option value="idea for game">idea for a game</option>
+	<option value="highscore problem">highscore problem</option>
+	<option value="other">Other</option>
+    </select>
+
+    <label for="subject">Details of your Problem</label>
+    <textarea id="subject" name="subject" placeholder="Please write text here" style="height:200px"></textarea>
+
+    <input type="button" value="Submit" onclick="submitForm();"> <a><a>
+
+    <div id="formResults" style="width:70%; background-color: white; font-size: 20px; margin: 20px; padding: 10px; display: none;">[FORM RESULTS WILL APPEAR HERE.]</div>
+  </form>
+</div>
+		</th>
+	<tr> 
+		<th>
+			<p style="font-family:Lucida Bright; font-size:20px;color:black;text-align:center;" id="rcorners2"> 
+			We really care about your thoughts on both our website and games we have created for you so <br> below is our location of the offices, where you can call into reception if you would like face to face contact <br> or phone the number above to book a meeting! <br> We value your opinions </p>
+		</th>
+
+	</tr>
+	<tr>
+		<th>
+			<a href="https://www.facebook.com/"><img src="facebook.png" width="100px" height="100px"  align="center"; width: 50%"/></a>
+			<a href="https://www.twitter.com/"><img src="twitter.png"  width="100px" height="100px" align="center"; width: 50%"/></a>
+		</th>
+		<th>
+			<p style="font-family:Lucida Bright; font-size:20px;color:black;text-align:center; align-content:center; align-items:center;" id="rcorners2"> If for any reason you feel like you need to contact us or get in touch with one of our team members you can do so by clicking on the facebook link or twitter icons <br> We are aware that some of you may not have these social media platforms due to your age so feel free to contact us on 028 70345824 or our email address of gamecentre@gmail.co.uk </p>
+	</tr>
+	<tr>
+		<th>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76107.61105638684!2d-3.0106366947502754!3d53.40833667976168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b3baaa7c56c95%3A0x22b7f1ac0ab5fa81!2sQueen%20Insurance%20Buildings!5e0!3m2!1sen!2suk!4v1573337476225!5m2!1sen!2suk" width="600" height="450" frameborder="0" align: "center"; style="border:0" allowfullscreen></iframe> 
+		</th>
+		<th>
+			<img src="sonny.png" width="350px" height="350px"  align="left"; width: 50%"/>
+		</th>
+	</tr>
+</table> 
+			
+
+
+
+
+
+
+<style> 
+
+.container {
+    border-radius: 10px;
+    background-color: #1653b5;
+    padding: 20px;
+    font-family:"Lucida Bright";
+    color: white;
+    font-size: 18px;
+    width: 400px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family:"Lucida Bright";
+    font-size: 18px;
+}
+
+input[type=submit] {
+    background-color: #1653b5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family:"Lucida Bright";
+    font-size: 18px;
+}
+
+input[type=submit]:hover {
+    background-color: #008c52;
+    font-family:"Lucida Bright";
+    font-size:19px;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html> 

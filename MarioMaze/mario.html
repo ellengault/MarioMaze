@@ -1,0 +1,82 @@
+<!DOCTYPE games.html>
+<html lang="en-UK">
+<head>
+<div class="header">
+    <img src = "header.jpg" class="header_image" />
+</div>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+
+
+	<div style="background-image: url('background.jpg');">
+<div class="navMENU">
+<ul>
+	<li><a href="home.html"> home</a> </li> 
+	<li><a href="women.html"> the maze</a> </li>
+	<li><a href="comingsoon.html"> coming soon</a> </li>
+	<li><a href="contact.html"> contact us</a> </li>
+</ul>
+</div> 
+<img src="footer.jpg" alt="footer" width="1500" height="80" align="left">
+
+</div>
+
+<h1 class="glow">the mario maze !</h1>
+<script>
+	function grid()
+	{
+		var canvas = document.getElementById("cnv");
+		var ctx =canvas.getContext('2d');
+
+		var maze = [
+		[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1],
+		[1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1],
+		[0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1],
+		[0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1],
+		[0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1],
+		[-1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1],
+		[1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1],
+		[1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1],
+		[1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1],
+		[1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1],
+		[1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]];
+
+		var blockSize=50;
+
+		for(var y = 0; y < maze.length; y++)
+		{
+			for(var x = 0; x < maze[y].length; x++)
+			{
+				if (maze[y] [x] ===1)
+				{
+					ctx.fillStyle="#429bf5";
+					ctx.fillRect(x*50, y*50, 50, 50);
+				}
+				else if(maze[y] [x] === -1)
+				{
+					ctx.fillStyle="blue";
+					ctx.fillRect(x*50, y*50, 50, 50);
+				}
+			}
+		}
+
+
+	}
+
+
+</script>
+
+
+</head>
+<body onload="grid()" bgcolor="LIGHTBLUE">
+	<center>
+		<canvas id="cnv" width="480px" height="480px">
+		</canvas>
+	</center>
+</body>
+
+
+<
+

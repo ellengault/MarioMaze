@@ -1,0 +1,189 @@
+<!DOCTYPE comingsoon.html>
+<html lang="en-UK">
+<head>
+<div class="header">
+    <img src = "header.jpg" class="header_image" />
+</div>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+
+
+	<div style="background-image: url('background.jpg');">
+<div class="navMENU">
+<ul>
+	<li><a href="home.html"> home</a> </li> 
+	<li><a href="women.html"> the maze</a> </li>
+	<li><a href="comingsoon.html"> coming soon</a> </li>
+	<li><a href="contact.html"> contact us</a> </li>
+</ul>
+</div> 
+<img src="footer.jpg" alt="footer" width="1500" height="80" align="left">
+<br>
+<br>
+
+
+<h1 class="glow">coming soon !</h1>
+
+
+<style>
+.slideshow-container{
+	width: 700px;
+	position: relative;
+	margin: auto;
+}
+
+.numbers{
+	position: absolute;
+	top: 0;
+	color: #f2f2f2;
+	padding: 8px 12px;
+	font-size: 12px;
+}
+
+.myslides{
+	display: none;
+}
+
+.prev , .next{
+	position: absolute;
+	top: 50%;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 16px;
+	margin-top: -22px;
+	border-radius: 0 3px 3px 0;
+	color: #fff;
+	cursor: pointer;
+}
+
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,.next:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+
+.caption{
+	text-align: center;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	color: red;
+	font-size: 20px;
+	padding: 8px 22px;
+}
+
+.dots{
+	width: 13px;
+	height: 13px;
+	background: gray;
+	display: inline-block;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.fade{
+	animation-name:fade;
+	animation-duration:1.5s;
+}
+
+@keyframes fade{
+	from {opacity: 0.4;}
+	to {opacity: 1;}
+}
+
+.active, .dot:hover {
+	background-color: #333;
+}
+</style>
+
+
+ </p>
+<div class="slideshow-container">
+
+<div class="myslides fade">
+<div class="numbers">1 / 4</div>
+<div><img src="crazy.jpg"></div>
+<div class="caption"> a crazy taxi journey, avoid crashes!!</div>
+</div>
+
+<div class="myslides fade">
+<div class="numbers">2 / 4</div>
+<div><img src="penguin2.jpg"></div>
+<div class="caption"> help penny the penguin serve all the customers! </div>
+</div>
+
+<div class="myslides fade">
+<div class="numbers">3 / 4</div>
+<div><img src="pac.png"></div>
+<div class="caption">help pac man get to the exit </div>
+</div>
+
+<div class="myslides fade">
+<div class="numbers">4 / 4</div>
+<div><img src="pizza.jpg"></div>
+<div class="caption"> help paddy make pizzas!</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dots" onclick="currentSlide(1)"></span> 
+<span class="dots" onclick="currentSlide(2)"></span> 
+<span class="dots" onclick="currentSlide(3)"></span> 
+<span class="dots" onclick="currentSlide(4)"></span> 
+</div>
+
+<script type="text/javascript">
+var slideIndex = 1;
+showSlide(slideIndex);
+
+function plusSlides(n){
+showSlide(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlide(slideIndex = n);
+}
+
+function showSlide(n){
+var i;
+var slides = document.getElementsByClassName("myslides");
+var dots = document.getElementsByClassName("dots");
+if (n > slides.length) { slideIndex = 1};
+if (n < 1) { slideIndex = slides.length};
+for (i=0;i<slides.length;i++) {
+slides[i].style.display = "none";
+};
+for (i=0;i<dots.length;i++) {
+dots[i].className = dots[i].className.replace(" active","");
+};
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<br> 
+<table style="width:90%; float:center;">
+	<tr>
+		<th>
+<p style="font-family:Lucida Bright; font-size:20px;color:black;text-align:center;" id="rcorners2"> <b> Coming soon </b> <br> As we have only started out we are aware that there are limited games on the site, this is soon to change, March 2020 our site will be packed with all games of all genres!! <br> Your all time favourites will be on one site! <br> We have given you a sneak peak of games which you will soon find on the site! </p>
+		</th>
+		<th colspan="1">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/7DFtOYgekHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</th>
+	</tr>
+	<tr>
+		<th>
+<p style="font-family:Lucida Bright; font-size:20px;color:black;text-align:center;" id="rcorners2"> <b> Do you want to be the best? </b> <br> Check out this youtube video on pac man, <br> in Mario's world <br> see how he gets on in the video!
+		</th>
+	</tr>
+</table>

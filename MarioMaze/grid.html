@@ -1,0 +1,180 @@
+<!DOCTYPE games.html>
+<html lang="en-UK">
+<head>
+<div class="header">
+    <img src = "header.jpg" class="header_image" />
+</div>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+
+
+	<div style="background-image: url('background.jpg');">
+<div class="navMENU">
+<ul>
+	<li><a href="home.html"> home</a> </li> 
+	<li><a href="women.html"> the maze</a> </li>
+	<li><a href="comingsoon.html"> coming soon</a> </li>
+	<li><a href="contact.html"> contact us</a> </li>
+</ul>
+</div> 
+<img src="footer.jpg" alt="footer" width="1500" height="80" align="left">
+
+</div>
+
+<h1 class="glow">the mario maze !</h1>
+<script>
+
+
+	// this allows the variables to be listed, in a open environment so they can be called / admended through any parts of the programme
+	var playerX = 50;
+	var playerY = 50;
+	var playerStep = 5;
+	var canvas, ctx;
+
+	function grid()
+	{
+		canvas = document.getElementById("cnv");
+		ctx =canvas.getContext('2d');
+		redraw();
+
+	}
+
+	function redraw() {
+		ctx.fillStyle="white";
+		ctx.fillRect(0, 0, 480, 480)
+
+		ctx.fillStyle="red";
+		ctx.fillRect(0, 0, 480, 20); //top line
+		ctx.fillRect(0, 0, 20, 480); // left line 
+		ctx.fillRect(460, 0, 20, 480); // right line
+		ctx.fillRect(0, 460, 480, 20); // bottom line 
+		ctx.fillRect(100, 70, 20, 60); // first line by the right
+		ctx.fillRect(100, 50, 120, 20);
+		ctx.fillRect(200, 70, 20, 50);
+		ctx.fillRect(270, 20, 30, 75);
+		ctx.fillRect(20, 120, 135, 20); 
+		ctx.fillRect(135, 150, 20, 50);
+		ctx.fillRect(135, 155, 120, 20); 
+		ctx.fillRect(235, 170, 20, 65);
+		ctx.fillRect(90, 230, 165, 20);
+		ctx.fillRect(70, 210, 20, 60); 
+		ctx.fillRect(0, 310, 50, 20);
+		ctx.fillRect(30, 190, 20, 140);
+		ctx.fillRect(30, 180, 50, 20);
+		ctx.fillRect(0, 360, 70, 20);
+		ctx.fillRect(0, 430, 90, 20);
+		ctx.fillRect(70, 395, 80, 20);
+		ctx.fillRect(130, 350, 20, 120);
+		ctx.fillRect(170, 320, 20, 140); // line going up 
+		ctx.fillRect(130, 300, 80, 20); // line going across
+		ctx.fillRect(180, 400, 60, 20);
+		ctx.fillRect(230, 345, 50, 20);
+		ctx.fillRect(120, 275, 20, 45);
+		ctx.fillRect(280, 400, 220, 20); 
+		ctx.fillRect(280, 290, 20, 120);
+		ctx.fillRect(255, 275, 90, 20);
+		ctx.fillRect(325, 180, 20, 110);
+		ctx.fillRect(245, 200, 45, 20);
+		ctx.fillRect(335, 275, 70, 20);
+		ctx.fillRect(280, 120, 45, 20);
+		ctx.fillRect(325, 30, 20, 110);
+		ctx.fillRect(325, 30, 80, 20);
+		ctx.fillRect(385, 30, 20, 250);
+		ctx.fillRect(320, 320, 90, 20);
+		ctx.fillRect(320, 320, 20, 50);
+		ctx.fillRect(400, 360, 100, 20);
+		
+
+		ctx.fillStyle="black";
+		ctx.fillRect(playerX, playerY, 20, 20);
+
+		
+	}
+
+	function moveLeft() {
+		var imageData = ctx.getImageData(playerX - playerStep, playerY, 1, 1);
+		var pixelColour = imageData.data[1];
+
+		if (pixelColour == 255) {
+			playerX -= playerStep;
+			redraw();
+		}
+	}
+
+	function moveRight() {
+		var imageData = ctx.getImageData(playerX - playerStep, playerY, 1, 1);
+		var pixelColour = imageData.data[1];
+
+		if (pixelColour == 255) {
+			playerX +=playerStep;
+			redraw();
+		}
+	}
+
+	function moveUp() {
+		var imageData = ctx.getImageData(playerX - playerStep, playerY, 1, 1);
+		var pixelColour = imageData.data[1];
+
+		if (pixelColour == 255) {
+			playerX = playerY + playerStep;
+			redraw();
+		}
+	}
+
+	function moveDown() {
+		var imageData = ctx.getImageData(playerX - playerStep, playerY, 1, 1);
+		var pixelColour = imageData.data[1];
+
+		if (pixelColour == 255) {
+			playerX = playerY + playerStep;
+			redraw();
+		}
+	}
+	
+
+
+	document.body.onkeydown = function(e) {
+		var keyCode = e.which;
+
+		if (keyCode == 37) {
+			moveLeft();
+		}
+
+		if (keyCode == 39) {
+			moveRight();
+		}
+
+		if (keyCode == 38) {
+			moveUp();
+		}
+
+		if(keyCode == 40){
+			moveDown();
+		}
+	
+	}
+
+
+
+
+	 
+
+	function Checkforcollusion(){
+		var imgdata = Context.getimage
+
+	}
+</script>
+
+
+</head>
+<body onload="grid()"> 
+	<center>
+		<canvas id="cnv" width="480px" height="480px">
+		</canvas>
+	</center>
+</body>
+
+
+<
+

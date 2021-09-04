@@ -1,0 +1,64 @@
+<!DOCTYPE games.html>
+<html lang="en-UK">
+<head>
+<div class="header">
+    <img src = "header.jpg" class="header_image" />
+</div>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+
+
+	<div style="background-image: url('background.jpg');">
+<div class="navMENU">
+<ul>
+	<li><a href="home.html"> home</a> </li> 
+	<li><a href="women.html"> the maze</a> </li>
+	<li><a href="comingsoon.html"> coming soon</a> </li>
+	<li><a href="contact.html"> contact us</a> </li>
+</ul>
+</div> 
+<img src="footer.jpg" alt="footer" width="1500" height="80" align="left">
+<br>
+<br>
+
+
+<h1 class="glow">welcome to game centre</h1>
+
+
+<br>
+
+<img src="fox.png" alt="fox cartoon" width="550" height="550" align="left"> 
+<p style="font-family:Lucida Bright; font-size:22px;color:white;text-align:center;" id="rcorners1">Thanks for visiting our site and welcome! <br> Games centre has been created to entertain you for hours! We are just getting started out on our website so only have the one game for now but by March we will have an endless list of games on our site for you all to play day in and day out!! </p>
+
+
+
+<p style="font-family:Lucida Bright; font-size:20px;color:white;text-align:center;" id="rcorners1">This site is children friendly so all games will be suitable for young auidences as well as older ones as there will be tricky levels to test your skills, starting out easy to give you a feel for the game! <br> Do not forget to add your name to the highscores at the end of each game and keep a personal record to try beat each time you play! </p>
+
+<br>
+<br> 
+
+
+<br>
+<br>
+<h2 style="font-family:Lucida Bright;font-size:25px;color:#1653b5;":> enter your email below to subscribe to our newsletters</h2>
+<center>
+<button onclick="myFunction()">click here</button>
+</center>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var txt;
+    var person= prompt("Please enter your email address:", "gamecenter@gmail.co.uk");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "Hello " + person + " thanks for signing up!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+
+</html> 

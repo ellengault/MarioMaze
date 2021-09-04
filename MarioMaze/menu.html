@@ -1,0 +1,60 @@
+<!DOCTYPE games.html>
+<html lang="en-UK">
+<head>
+<div class="header">
+    <img src = "header.jpg" class="header_image" />
+</div>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+
+
+	<div style="background-image: url('background.jpg');">
+<div class="navMENU">
+<ul>
+	<li><a href="home.html"> home</a> </li> 
+	<li><a href="women.html"> the maze</a> </li>
+	<li><a href="comingsoon.html"> coming soon</a> </li>
+	<li><a href="contact.html"> contact us</a> </li>
+</ul>
+</div> 
+<img src="footer.jpg" alt="footer" width="1500" height="80" align="left">
+<br>
+<br>
+
+
+<h1 class="glow">the mario maze !</h1>
+
+<p style="font-family:Lucida Bright; font-size:20px;color:black;text-align:center;" id="rcorners2"> <b> instructions </b> <br> i will list instructions here  </p>
+
+
+<br>
+
+<div>
+  <center>
+
+<canvas id="canvas"></canvas>
+
+<script>
+var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext("2d");
+
+canvas.width = 480;
+canvas.height = 480;
+
+
+var background = new Image();
+background.src = "maze1.jpg";
+
+background.onload = function(){
+    ctx.drawImage(background,0,0);   
+}
+</script>
+
+<script>
+var c = document.getElementById("Canvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script> 
